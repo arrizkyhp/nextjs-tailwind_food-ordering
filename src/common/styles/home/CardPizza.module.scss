@@ -1,0 +1,15 @@
+.container {
+  @apply w-[22%] p-[20px_40px] flex flex-col items-center justify-center;
+
+  .title {
+    @apply text-lg font-bold text-primary cursor-pointer;
+  }
+
+  .price {
+    @apply text-lg font-bold text-[#666];
+  }
+
+  .desc {
+    @apply text-center text-[#777];
+  }
+}

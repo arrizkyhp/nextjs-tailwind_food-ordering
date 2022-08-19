@@ -1,3 +1,5 @@
-import Featured from "./Featured";
+import { Slider } from "./slider"
+import { PizzaList } from "./pizzaList"
+import { CardPizza } from "./card"
 
-export { Featured }
+export { Slider, PizzaList, CardPizza }

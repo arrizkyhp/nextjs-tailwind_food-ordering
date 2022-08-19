@@ -1,8 +1,8 @@
-import styles from "@styles/Featured.module.scss";
+import styles from "@styles/home/Slider.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 
-const Featured = () => {
+const Slider = () => {
   const [slide, setSlide] = useState<number>(0);
 
   const images = [
@@ -46,4 +46,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Slider;

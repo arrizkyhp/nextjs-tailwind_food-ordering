@@ -1,0 +1,53 @@
+.container {
+  @apply p-[50px] flex;
+
+  .left {
+    @apply flex-[2];
+
+    .table {
+      @apply w-full border-spacing-5;
+
+      td {
+        &:first-child {
+          @apply flex items-center justify-center;
+        }
+
+        &:nth-last-child(2) {
+          @apply text-center;
+        }
+
+        .imgContainer {
+          @apply w-[100px] h-[100px] relative flex justify-center items-center;
+        }
+      }
+
+      .name {
+        @apply font-medium text-primary text-lg;
+      }
+
+      .total {
+        @apply font-medium text-lg;
+      }
+    }
+  }
+
+  .right {
+    @apply flex-[1];
+
+    .wrapper {
+      @apply w-[90%] max-h-80 bg-[#333] p-[50px] pt-[30px] flex flex-col justify-between text-white;
+
+      .title {
+        @apply text-2xl font-bold mb-4;
+      }
+
+      .totalTextTitle {
+        @apply mr-3;
+      }
+
+      .button {
+        @apply text-primary font-bold cursor-pointer mt-5 bg-slate-200 py-3;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .container {
-  @apply h-[100px] p-[0px_50px] flex items-center justify-between sticky bg-primary z-10;
+  @apply h-[100px] p-[0px_50px] flex items-center justify-between top-0 sticky bg-primary z-20;
 
   .callButton {
     @apply bg-white rounded-full p-[10px] w-[50px] h-[50px];
@@ -34,10 +34,14 @@
       .listItem {
         @apply m-5 font-medium;
       }
+
+      .linkLogo {
+        cursor: pointer;
+      }
     }
 
     .cart {
-      @apply relative;
+      @apply relative cursor-pointer;
 
       .counter {
         @apply absolute top-[-10px] right-[-10px] w-5 h-5 rounded-full bg-white p-[3px] leading-3 flex justify-center items-center font-bold text-primary;

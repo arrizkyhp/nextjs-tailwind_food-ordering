@@ -1,0 +1,72 @@
+.container {
+  @apply h-[calc(100vh-100px)] flex;
+
+  .left {
+    @apply flex-[1] h-full flex items-center justify-center;
+
+    .imgContainer {
+      @apply w-[80%] h-[80%] relative;
+    }
+  }
+
+  .right {
+    @apply flex-[1] p-[20px] mt-5;
+
+    .title {
+      @apply text-3xl font-bold mb-5;
+    }
+
+    .price {
+      @apply text-primary text-2xl mb-8 font-normal border-b border-primary border-solid;
+    }
+
+    .desc {
+      @apply my-4;
+    }
+
+    .sizes {
+      @apply w-[40%] flex justify-between;
+
+      .size {
+        @apply w-[30px] h-[30px] relative cursor-pointer;
+
+        &:nth-child(2) {
+          @apply w-[40px] h-[40px];
+        }
+
+        &:last-child {
+          @apply w-[50px] h-[50px];
+        }
+
+        .number {
+          @apply absolute top-[-5px] right-[-20px] bg-[teal] text-white text-xs p-[0px_5px] rounded-xl;
+        }
+      }
+    }
+
+    .choose {
+      @apply font-bold text-lg mb-5;
+    }
+
+    .ingredients {
+      @apply flex mb-8;
+    }
+
+    .option {
+      @apply flex items-center mr-[20px] text-sm font-medium gap-1 text-center;
+    }
+
+    .checkbox {
+      @apply w-5 h-5;
+    }
+
+    .add {
+      .quantity {
+        @apply w-[50px] h-[30px] border border-slate-500;
+      }
+      .button {
+        @apply h-8 ml-3 bg-primary text-white border-none font-medium cursor-pointer px-2;
+      }
+    }
+  }
+}

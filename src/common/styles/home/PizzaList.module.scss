@@ -1,0 +1,15 @@
+.container {
+  @apply p-[20px_10px] flex flex-col items-center;
+
+  .title {
+    @apply text-3xl my-6 font-semibold;
+  }
+
+  .desc {
+    @apply text-xl text-[#444] w-[70%] mb-8;
+  }
+
+  .wrapper {
+    @apply flex items-center justify-center w-full flex-wrap;
+  }
+}

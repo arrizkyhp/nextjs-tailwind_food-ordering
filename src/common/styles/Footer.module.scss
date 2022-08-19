@@ -1,0 +1,27 @@
+.container {
+  @apply h-[calc(100vh-100px)] bg-[#222] flex;
+
+  .item {
+    @apply flex-[1] relative flex;
+
+    &:last-child {
+      @apply flex-[2] p-14 content-between;
+    }
+
+    .card {
+      @apply flex-[1] p-[0_20px];
+
+      .title {
+        @apply text-xl text-secondary;
+      }
+
+      .text {
+        @apply text-gray-200;
+      }
+
+      .motto {
+        @apply text-gray-300 text-2xl font-bold;
+      }
+    }
+  }
+}
